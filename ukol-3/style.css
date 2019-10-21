@@ -1,0 +1,79 @@
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+
+}
+
+.hlavni{
+   /* width: 60%;*/
+   padding: 3rem;
+   background-color:#fffcee;
+}
+
+h1{
+    color:#0f00ce;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom:1rem ;
+    margin-left:2rem ;
+
+
+}
+
+p{
+    color:#0f00ce;
+    line-height: 1.2rem;
+    margin: 0;
+    }
+a{
+    color:#0f00ce;
+    font-weight: 700;
+}
+
+a:link{
+    color:#0f00ce;
+}
+
+/* a:visited    {color: #f3747e}*/
+a:active{
+    color:#e82e2e;
+}
+
+a:visited{
+    color:#7e389b;
+}
+
+a:focus{
+    color:#f3747e;
+}
+
+ul{
+    list-style-type:none;
+    color: #0f00ce;
+    margin:0 0 0 1rem;
+    padding: 0;
+}
+
+
+/*img{
+    border-radius: ;
+}*/
+
+.vedlejsi,
+.posledni{
+    font-style: italic;
+    color: #677db2;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+img{
+    margin: 0 3rem 0 0;
+    width: 18%;
+    float: left;
+    border-radius: 50%;
+    padding: 0;
+}
+.text{
+    width: 70%;
+}
