@@ -1,0 +1,112 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+ twitter    #1da1f2
+*/
+
+
+body {
+    background-color: #bdc3c7;
+}
+
+.profil {
+    width: 250px;
+    background-color:#31363b ;
+    color: #bdc3c7;
+    box-shadow: 1px 1px 5px #31363b;
+
+}
+
+.hlavicka .foto{
+    width: 100%;
+    padding: 0;
+}
+
+.hlavicka{
+    position: relative
+}
+
+.logo {
+    background-color: #b92e81;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -20px;
+    right: 15px;
+    box-shadow: 3px 3px 8px #31363b;
+
+}
+
+.obsah .jmeno {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.obsah{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    padding:1rem;
+}
+
+.portfolio{
+    width: 100%;
+}
+
+.facebook,.twitter {
+    width: 50%;
+
+}
+.facebook:hover {
+    background-color: #3b5998;
+}
+
+.twitter:hover {
+    background-color:  #1da1f2;
+}
+
+.portfolio:hover {
+    background-color: #e74c3c
+}
+
+.odkazy{
+    list-style: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+.odkazy li {
+    display: inline-block;
+}
+
+.odkazy a {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #bdc3c7;
+    border: 1px solid  #3f464d;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    padding: .5rem;
+    display: block;
+
+}
+
+
+
+
