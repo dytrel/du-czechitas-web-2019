@@ -1,0 +1,187 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700
+ https://fonts.google.com/specimen/Roboto
+*/
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* hlavička */
+a {
+	text-decoration: none;
+}
+header.hlavni{
+    background-color: white;
+    display: flex;
+    padding: 0 1rem;
+}
+
+.navigace ul{
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+list-style:none;
+padding-left: 0;
+
+}
+
+.navigace.li{
+    display: inline-block;
+    align-items: center;
+
+}
+
+.navigace a {
+    padding: 2rem;
+    color: #25133d;
+
+}
+
+.header-brand{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    color: #25133d;
+
+
+}
+
+.obrazek{
+    color: white;
+    background-image: url(images/pozadi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.ruka img{
+    display: flex;
+
+}
+
+.info h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 5rem;
+    margin: 0 0 0 2rem;
+    
+}
+
+.info h2{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;    
+    margin: 1rem 2rem 2rem 2rem;
+
+}
+    
+.info ul{   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style:none;
+    margin: 0 0 2rem 2rem;
+    padding: 0;
+  
+
+}
+
+.info li{
+    padding: 1rem;
+    border:solid 1px white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.info li:first-child {
+background-color:#48418e;  
+margin: 0 1rem 0 0;
+
+}
+.info a{
+    color: white;
+}
+
+
+
+/* konec info */
+
+/* obsah*/
+
+.obsah h3{
+    color:#25133d;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+
+}
+
+.obsah{
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.obsah div{
+    text-align: center;
+
+}
+
+.obsah div:nth-child(2){
+    margin: 0 1rem;
+}
+
+.obsah img{
+    width: 75px;
+}
+
+.obsah p{
+    margin:0;
+}
+
+
+
+/* zápatí */
+footer{
+    background-color:#48418e;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
