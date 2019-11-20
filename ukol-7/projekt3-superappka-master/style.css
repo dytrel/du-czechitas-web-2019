@@ -56,19 +56,21 @@ padding-left: 0;
 }
 
 .navigace a {
-    padding: 2rem;
+    padding: 0rem 2rem;
     color: #25133d;
-
+    display:block;
 }
 
+.navigace a:hover{
+    text-decoration:underline;
+
+}
 
 .header-brand{
     text-transform: uppercase;
     font-weight: bold;
     padding: 1rem 2rem;
     color: #25133d;
-
-
 }
 
 .obrazek{
@@ -97,12 +99,11 @@ padding-top: 3rem;
     
 }
 
-
 .info p{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
     font-size: 2rem;    
-    margin: 1rem 2rem 3rem 2rem;
+    margin: 1rem 2rem 2rem 2rem;
 
 }
     
@@ -113,27 +114,34 @@ padding-top: 3rem;
     list-style:none;
     margin: 0 0 2rem 2rem;
     padding: 0;
-  
 
 }
 
-.info li{
+.info a{
     padding: 1rem;
     border:solid 1px white;
     border-radius: 8px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-
-
-}
-
-.info li:first-child {
-background-color:#48418e;  
-margin: 0 1rem 0 0;
+    color: white;
 
 }
-.info a{
+
+.info a:hover{
+    background: rgba(0, 0, 0, 0.2);
     color: white;
 }
+
+.info li{
+    margin: 2rem 0 3rem 0;
+
+}
+
+.info .prvni {
+background-color:#48418e;  
+margin-right:1rem;
+
+}
+
 
 
 
