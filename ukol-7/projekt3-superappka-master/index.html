@@ -59,6 +59,7 @@
                     <img src="images/telefon.png" alt="Ruka s telefonem">
                 </div>
             </section>
+
             <section class="obsah">
                 <div class="cestuj">
                     <img src="images/letadlo.svg" alt="Letadlo">
@@ -100,6 +101,35 @@
 
 
     </div><!-- konec .obal -->
+
+    <!-- <script>
+        (function () {
+
+            let navbarToggler = document.querySelector('#navbarToggler')
+            let navbar = document.querySelector('#navbar')
+
+            navbarToggler.addEventListener('click', function (e) {
+                navbar.classList.toggle('navigace')
+
+                console.log('navbar display', getComputedStyle(navbar).display)
+
+                e.stopPropagation()
+            })
+
+            document.addEventListener('click', function () {
+
+                navbar.classList.remove('navigace')
+            })
+
+            document.addEventListener('keydown', function (e) {
+                if (e.keyCode === 27) {
+                    // Handle escape on page by hiding the menu
+                    navbar.classList.remove('navigace')
+                }
+            })
+
+        })()
+    </script> -->
 </body>
 
 </html>
