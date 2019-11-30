@@ -6,15 +6,42 @@
     <title>Mobilní aplikace</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 
 <body>
     <div class="obal">
-
-        <!-- tvoje HTML sem -->
-
         <header class="hlavni">
-            <a class="header-brand" href="">
+
+            <!-- tvoje HTML sem -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">
+                    SuperAppka
+                </a>
+
+                <button id="navbarToggler" class="navbar-toggler toggler-example" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Úžasný design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Boží funkce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Zdarma ke stažení</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- 
+        <header class="hlavni">
+            <a class="navbar-brand" href="">
                 Super appka
             </a>
             <nav class="navigace">
@@ -34,7 +61,7 @@
                 </ul>
             </nav>
 
-        </header>
+        </header> -->
 
         <main>
             <section class="obrazek">
@@ -102,14 +129,14 @@
 
     </div><!-- konec .obal -->
 
-    <!-- <script>
+    <script>
         (function () {
 
             let navbarToggler = document.querySelector('#navbarToggler')
             let navbar = document.querySelector('#navbar')
 
             navbarToggler.addEventListener('click', function (e) {
-                navbar.classList.toggle('navigace')
+                navbar.classList.toggle('header.hlavni')
 
                 console.log('navbar display', getComputedStyle(navbar).display)
 
@@ -118,18 +145,18 @@
 
             document.addEventListener('click', function () {
 
-                navbar.classList.remove('navigace')
+                navbar.classList.remove('header.hlavni')
             })
 
             document.addEventListener('keydown', function (e) {
                 if (e.keyCode === 27) {
                     // Handle escape on page by hiding the menu
-                    navbar.classList.remove('navigace')
+                    navbar.classList.remove('header.hlavni')
                 }
             })
 
         })()
-    </script> -->
+    </script>
 </body>
 
 </html>
