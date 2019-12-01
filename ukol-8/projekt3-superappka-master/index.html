@@ -144,9 +144,6 @@
 
             navbarToggler.addEventListener('click', function (e) {
                 navbar.classList.toggle('menu-show')
-
-                console.log('navbar display', getComputedStyle(navbar).display)
-
                 e.stopPropagation()
             })
 
@@ -157,7 +154,6 @@
 
             document.addEventListener('keydown', function (e) {
                 if (e.keyCode === 27) {
-                    // Handle escape on page by hiding the menu
                     navbar.classList.remove('menu-show')
                 }
             })
